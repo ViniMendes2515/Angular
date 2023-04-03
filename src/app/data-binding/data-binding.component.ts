@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MeuFormComponent  } from '../meu-form/meu-form.component';
 
 @Component({
   selector: 'app-data-binding',
