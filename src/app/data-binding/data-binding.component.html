@@ -1,4 +1,4 @@
-<div
+<!-- <div
   class="d-flex justify-content-center align-items-center m-8"
 >
   <section class="property-binding">
@@ -110,11 +110,20 @@
     </article>
   </section>
   <br>
-  <app-meu-form></app-meu-form>
+  <app-meu-form></app-meu-form> -->
 
   <section class="input-output-properties">
     <article>
       <h3> Input/Output Properties </h3>
+
+      <app-curso [nome] = "nomeDoCurso"> </app-curso>
+
+      <contador [valor]="valorInicial"
+        (mudouValor)="onMudouValor($event)"
+      ></contador>
+
     </article>
   </section>
-</div>
+
+
+<!-- </div> -->

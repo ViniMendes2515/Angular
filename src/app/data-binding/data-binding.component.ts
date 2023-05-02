@@ -16,6 +16,10 @@ export class DataBindingComponent implements OnInit {
   valorSalvo = '';
   isMouseOver: boolean = false;
 
+  nomeDoCurso : string = 'Angular';
+
+  valorInicial = 15;
+
   salvarValor(valor: any) {
     this.valorSalvo = valor;
   }
@@ -44,5 +48,9 @@ export class DataBindingComponent implements OnInit {
 
   ngOnInit(): void {
     throw new Error('Method not implemented.');
+  }
+
+  onMudouValor(evento: any){
+    console.log(evento.novoValor)
   }
 }
